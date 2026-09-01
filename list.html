@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>随笔日记 - evanzhou.com</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-5.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media-query.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/prism.css">
+    <!--link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Montserrat:wght@600;900&display=swap" rel="stylesheet"-->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+</head>
+<body class="line-numbers">
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class='cursor'></div>
+<div class="main-wrapper">
+    <header class="muri-header" id="muri_header">
+        <nav class="primary-menu navbar navbar-expand-lg border-bottom-0 muri-sidebar">
+            <div class="close-btn hash-has-sub"><a id="nav-close2" class="nav-close hash">
+                <div class="close-line" id="hamburger-7"><span class="line"></span> <span class="line"></span> <span
+                        class="line"></span></div>
+            </a></div>
+            <div class="col-sm-3 col-md-3 back-color-shape"></div>
+            <div class="container-fluid px-lg-3 flex-lg-column profile-img-col justify-content-center muri-sidebar-content">
+                <a href="./" class="muri-prof-img"> <span class="bg-dark-2 d-lg-inline-block"> <img
+                        class="img-fluid d-block muri-pro-pic" src="./assets/images/sidebar/profile.png"
+                        alt="breeze profile pic"> </span> </a>
+                <div class="murillo-logo"><a href="./" class="mt-lg-4 portfolio-logo"> <span
+                        class="d-lg-inline-block"> <img class="muri-logo" src="./assets/images/sidebar/logo.png"
+                                                        alt="logo"> </span> </a></div>
+                <div id="header-nav" class="collapse navbar-collapse w-100 my-lg-auto">
+                    <ul class="navbar-nav muri-navbar-nav text-lg-center my-lg-auto tabs">
+                        <li class="nav-item muri-navbar-item "><a class="nav-link muri-navbar-link smooth-scroll "
+                                                                  href="./">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path d="M1024 512c0-281.6-230.4-512-512-512S0 230.4 0 512c0 107.52 30.72 204.8 87.04 286.72 10.24 10.24 15.36 20.48 25.6 30.72l5.12 5.12c51.2 61.44 117.76 112.64 189.44 143.36 0 0 5.12 0 5.12 5.12 10.24 5.12 20.48 10.24 30.72 10.24 5.12 0 10.24 5.12 15.36 5.12 10.24 5.12 20.48 5.12 30.72 5.12 5.12 0 15.36 5.12 20.48 5.12h5.12c10.24 0 25.6 5.12 35.84 5.12H460.8c15.36 0 35.84 5.12 51.2 5.12h15.36c15.36 0 30.72 0 46.08-5.12 10.24 0 20.48-5.12 25.6-5.12 15.36 0 25.6-5.12 40.96-10.24 10.24-5.12 20.48-5.12 30.72-10.24l46.08-15.36c10.24-5.12 15.36-5.12 25.6-10.24 15.36-5.12 30.72-15.36 40.96-25.6 5.12 0 10.24-5.12 10.24-5.12 51.2-35.84 97.28-81.92 138.24-138.24v-5.12C993.28 716.8 1024 619.52 1024 512zM512 102.4c225.28 0 409.6 184.32 409.6 409.6 0 66.56-15.36 128-40.96 179.2-51.2-35.84-107.52-66.56-168.96-87.04 20.48-20.48 30.72-46.08 40.96-76.8 20.48-66.56 20.48-133.12-10.24-194.56C680.96 204.8 527.36 153.6 399.36 209.92c-128 61.44-179.2 215.04-122.88 343.04 10.24 20.48 20.48 35.84 30.72 51.2-61.44 20.48-117.76 51.2-168.96 87.04-20.48-51.2-35.84-112.64-35.84-179.2 0-225.28 184.32-409.6 409.6-409.6z m296.96 691.2c-5.12 5.12-5.12 10.24-10.24 10.24l-20.48 20.48c-5.12 5.12-10.24 5.12-15.36 10.24-71.68 51.2-153.6 87.04-250.88 87.04h-40.96-5.12c-10.24 0-20.48-5.12-30.72-5.12-20.48-5.12-35.84-10.24-56.32-15.36-5.12 0-10.24-5.12-15.36-5.12-15.36-5.12-35.84-15.36-51.2-25.6-5.12-5.12-10.24-5.12-15.36-10.24-15.36-10.24-25.6-15.36-40.96-25.6-5.12-5.12-10.24-5.12-15.36-10.24-15.36-10.24-25.6-25.6-35.84-35.84l-5.12-5.12c66.56-51.2 148.48-87.04 230.4-102.4 20.48-5.12 40.96-20.48 40.96-40.96s-10.24-46.08-30.72-51.2c-30.72-15.36-56.32-40.96-71.68-71.68-30.72-81.92 0-174.08 76.8-209.92 76.8-35.84 168.96-5.12 204.8 71.68 15.36 35.84 20.48 76.8 5.12 117.76-15.36 40.96-40.96 71.68-76.8 87.04-20.48 10.24-30.72 30.72-30.72 51.2s20.48 40.96 40.96 40.96c81.92 15.36 163.84 51.2 230.4 102.4 0 5.12-5.12 10.24-10.24 15.36z"
+                                      fill="#B0B0B0"></path>
+                            </svg>
+                            <span class="navbar-text"> 关于我 </span></a></li>
+                        <li class="nav-item muri-navbar-item "><a class="nav-link muri-navbar-link smooth-scroll "
+                                                                  href="./sponsor.html">
+                            <svg viewBox="0 0 1117 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24">
+                                <path d="M781.963636 116.363636C912.290909 116.363636 1019.345455 225.745455 1024 360.727273v37.236363c-20.945455 307.2-293.236364 451.490909-411.927273 498.036364-18.618182 9.309091-34.909091 11.636364-53.527272 11.636364s-34.909091-2.327273-53.527273-9.309091c-116.363636-48.872727-390.981818-190.836364-411.927273-498.036364v-37.236364C97.745455 225.745455 204.8 116.363636 335.127273 116.363636c86.109091 0 160.581818 46.545455 204.8 118.690909 4.654545 6.981818 11.636364 9.309091 18.618182 9.309091s13.963636-2.327273 18.618181-9.309091C619.054545 162.909091 695.854545 116.363636 781.963636 116.363636m0-93.090909c-83.781818 0-162.909091 30.254545-223.418181 86.109091C498.036364 53.527273 418.909091 23.272727 335.127273 23.272727 155.927273 23.272727 6.981818 169.890909 0 356.072727v48.872728c25.6 358.4 337.454545 523.636364 470.109091 577.163636 27.927273 11.636364 58.181818 16.290909 88.436364 16.290909 30.254545 0 60.509091-4.654545 88.436363-16.290909 132.654545-53.527273 444.509091-218.763636 470.109091-577.163636v-48.872728C1110.109091 169.890909 961.163636 23.272727 781.963636 23.272727z"
+                                      fill="#B0B0B0"></path>
+                            </svg>
+                            <span class="navbar-text"> 支持我 </span></a></li>
+                        <li class="nav-item muri-navbar-item active"><a class="nav-link muri-navbar-link smooth-scroll "
+                                                                        href="./list.html">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path d="M845.913043 22.26087H178.086957c-24.486957 0-44.521739 20.034783-44.52174 44.521739v890.434782c0 24.486957 20.034783 44.521739 44.52174 44.521739h667.826086c24.486957 0 44.521739-20.034783 44.52174-44.521739V66.782609c0-24.486957-20.034783-44.521739-44.52174-44.521739z m-44.521739 890.434782H222.608696V111.304348h578.782608v801.391304zM317.217391 723.478261c0-24.486957 20.034783-44.521739 44.521739-44.521739h300.52174c24.486957 0 44.521739 20.034783 44.521739 44.521739s-20.034783 44.521739-44.521739 44.521739h-300.52174c-24.486957 0-44.521739-20.034783-44.521739-44.521739z m6.678261-211.478261c0-24.486957 20.034783-44.521739 44.521739-44.521739h292.730435c24.486957 0 44.521739 20.034783 44.521739 44.521739s-20.034783 44.521739-44.521739 44.521739H368.417391c-24.486957 0-44.521739-20.034783-44.521739-44.521739z m0-211.478261c0-24.486957 20.034783-44.521739 44.521739-44.521739h292.730435c24.486957 0 44.521739 20.034783 44.521739 44.521739s-20.034783 44.521739-44.521739 44.521739H368.417391c-24.486957 0-44.521739-20.034783-44.521739-44.521739z"
+                                      fill="#B0B0B0"></path>
+                            </svg>
+                            <span class="navbar-text"> 随笔日记 </span></a></li>
+                        <li class="nav-item muri-navbar-item "><a class="nav-link muri-navbar-link smooth-scroll "
+                                                                  href="./contact.html">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path d="M89.6256 464.0256c-30.72 34.5088-61.2352 88.064-65.1264 141.6192C9.2416 697.6 81.9456 785.664 181.5936 839.3216c7.68 30.72-26.7264 84.1728-26.7264 84.1728-15.2576 7.68 7.68 7.68 7.68 7.68 53.6576 0 114.8928-45.9776 145.5104-68.9152 80.384 7.68 153.2928-11.4688 214.528-45.9776-233.792-11.4688-432.96-168.448-432.96-352.256z m0 0"
+                                      fill="#B0B0B0"></path>
+                                <path d="M1001.1904 448.5632c0-195.2768-195.2768-356.1472-444.2112-356.1472S112.6656 249.4976 112.6656 448.5632c0 187.6992 195.2768 348.5696 436.5312 348.5696 38.2976 38.2976 149.4016 118.6816 233.6768 118.6816 0 0 38.2976 7.68 22.9376-15.2576 0 0-68.9152-84.1728-53.6576-134.0416C901.568 705.28 1001.1904 586.5984 1001.1904 448.5632z m-604.16 122.88c-13.1072 0-24.576-1.3312-34.304-4.096-9.728-2.7648-18.0224-6.3488-24.6784-10.752-6.7584-4.5056-11.776-9.5232-15.1552-15.1552-3.3792-5.632-5.0176-11.264-5.0176-16.9984 0-6.7584 3.4816-12.1856 10.5472-16.2816 7.0656-4.1984 14.848-7.9872 23.2448-11.5712 8.4992-3.4816 16.2816-7.168 23.2448-11.0592 7.0656-3.8912 10.5472-8.8064 10.5472-14.848s-1.9456-11.6736-5.7344-16.7936c-3.8912-5.12-8.0896-10.9568-12.6976-17.5104-4.608-6.5536-8.9088-14.2336-12.6976-23.04-3.8912-8.8064-5.7344-20.0704-5.7344-33.8944 0-9.9328 1.024-19.5584 3.072-28.7744 2.048-9.216 5.2224-17.408 9.3184-24.4736 4.1984-7.0656 9.4208-12.5952 15.872-16.7936 6.4512-4.1984 13.9264-6.2464 22.528-6.2464 11.5712 0 21.0944 1.9456 28.7744 5.7344-1.9456 11.5712-2.8672 23.552-2.8672 36.0448 0 20.1728 1.6384 37.2736 5.0176 51.4048 3.3792 14.1312 7.5776 26.2144 12.6976 36.4544-4.8128 6.4512-9.3184 12.3904-13.4144 18.0224-4.1984 5.632-6.2464 12.288-6.2464 19.968 0 4.1984 2.2528 7.7824 6.7584 10.752 4.5056 3.072 9.8304 5.9392 16.0768 8.6016 6.2464 2.7648 12.9024 5.5296 19.968 8.3968 7.0656 2.8672 13.312 5.9392 18.7392 9.1136 0.3072 1.6384 0.512 4.1984 0.512 7.68 0 6.0416-2.6624 11.0592-7.8848 14.848-5.2224 3.7888-11.8784 7.4752-19.968 11.0592a655.5264 655.5264 0 0 0-25.9072 11.9808c-9.216 4.5056-17.7152 10.5472-25.3952 18.2272h-9.216zM696.1536 633.6c-9.0112 4.9152-20.7872 9.5232-35.5328 13.7216-14.7456 4.1984-31.6416 7.4752-50.8928 9.8304-19.2512 2.3552-38.912 3.584-59.0848 3.584-23.04 0-43.4176-1.2288-61.2352-3.584-17.8176-2.3552-32.6656-5.632-44.6464-9.6256-11.9808-3.9936-21.0944-8.6016-27.3408-13.7216-6.2464-5.12-9.3184-10.24-9.3184-15.36 0-7.9872 2.9696-14.9504 8.9088-20.8896 5.9392-5.9392 13.312-11.264 22.3232-16.0768 9.0112-4.8128 18.6368-9.216 29.0816-13.2096 10.4448-3.9936 20.0704-8.192 29.0816-12.6976 9.0112-4.5056 16.384-9.3184 22.3232-14.6432 5.9392-5.3248 8.9088-11.5712 8.9088-18.944 0-7.3728-1.536-14.2336-4.608-20.6848-3.072-6.4512-6.8608-12.9024-11.5712-19.456-4.608-6.5536-9.728-13.7216-15.1552-21.4016-5.4272-7.68-10.4448-16.2816-15.1552-25.9072-4.7104-9.6256-8.4992-20.6848-11.5712-33.1776-3.072-12.4928-4.608-26.9312-4.608-43.2128 0-35.5328 6.656-63.7952 19.968-84.7872 13.312-20.992 33.8944-31.4368 61.6448-31.4368 23.3472 0 41.7792 3.4816 55.1936 10.5472 13.4144 7.0656 23.6544 16.0768 30.5152 27.136 6.8608 11.0592 11.1616 23.2448 13.0048 36.4544 1.7408 13.312 2.6624 26.3168 2.6624 39.1168 0 17.3056-1.536 32.1536-4.608 44.6464-3.072 12.4928-6.7584 23.3472-11.264 32.6656-4.5056 9.3184-9.3184 17.5104-14.4384 24.6784-5.12 7.168-9.9328 14.1312-14.4384 20.6848-4.5056 6.5536-8.192 13.312-11.264 20.1728-3.072 6.8608-4.608 14.6432-4.608 23.2448 0 6.7584 2.9696 12.5952 8.9088 17.7152 5.9392 5.12 13.312 10.0352 22.3232 14.6432 9.0112 4.608 18.7392 9.0112 29.2864 13.2096 10.5472 4.1984 20.2752 8.704 29.2864 13.7216 9.0112 4.9152 16.384 10.4448 22.3232 16.2816 5.9392 5.8368 8.9088 12.9024 8.9088 20.8896 0.0896 5.7344-4.3136 10.9568-13.312 15.872z m47.808-68.4032a206.0288 206.0288 0 0 1-31.9488 3.3792c-9.0112-6.0416-18.5344-10.752-28.7744-14.1312-10.24-3.3792-19.968-6.4512-29.0816-9.1136-9.1136-2.7648-16.9984-5.7344-23.552-9.1136-6.5536-3.3792-10.4448-8.192-11.776-14.6432 1.3312-6.0416 5.4272-11.0592 12.4928-14.848 7.0656-3.8912 14.6432-7.4752 22.8352-10.752 8.192-3.3792 15.5648-6.9632 22.1184-10.752 6.5536-3.8912 9.8304-8.6016 9.8304-14.4384 0-6.7584-2.56-12.9024-7.68-18.5344s-10.4448-12.0832-15.872-19.456c5.12-11.1616 9.3184-24.4736 12.6976-39.8336 3.3792-15.36 5.0176-33.4848 5.0176-54.272 0-4.5056-0.2048-9.0112-0.7168-13.4144-0.512-4.5056-1.024-9.0112-1.6384-13.4144 8.2944-5.7344 15.872-8.6016 22.528-8.6016 15.0528 0 27.0336 2.4576 36.0448 7.4752 9.0112 4.9152 15.7696 11.1616 20.3776 18.5344 4.608 7.3728 7.68 15.2576 9.1136 23.7568 1.4336 8.4992 2.1504 16.2816 2.1504 23.2448 0 14.4384-2.3552 26.0096-6.9632 34.816-4.608 8.8064-9.728 16.384-15.36 22.8352-5.632 6.4512-10.752 12.288-15.36 17.7152-4.608 5.4272-6.9632 11.8784-6.9632 19.2512 0 3.4816 1.8432 6.7584 5.5296 9.6256 3.6864 2.8672 8.192 5.632 13.7216 8.192 5.4272 2.56 11.4688 5.0176 18.0224 7.4752 6.5536 2.3552 12.5952 4.9152 18.0224 7.68s10.0352 5.7344 13.7216 9.1136c3.6864 3.3792 5.5296 7.2704 5.5296 11.776 0 7.0656-2.3552 13.312-7.168 18.7392s-11.1616 10.0352-19.2512 13.7216c-8.0896 3.2768-17.3056 6.0416-27.648 7.9872z m0 0"
+                                      fill="#B0B0B0"></path>
+                            </svg>
+                            <span class="navbar-text"> 加入我的QQ群 </span></a></li>
+                    </ul>
+                </div>
+                <div class="muri-contact w-100 my-lg-auto" id="muri_contact">
+                    <ul class="nav-social-icons text-lg-center">
+                        <li class="nav-social-item mb-3">
+                            <a href="https://github.com/nightsheen" target="_blank" class="nav-social-link">
+                                <img src="./assets/images/sidebar/github.png" alt="github" width="20" height="20">
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://blog.csdn.net/breezecn" target="_blank" class="nav-social-link">
+                                <img src="./assets/images/sidebar/csdn.png" alt="csdn" width="20" height="20">
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://gitee.com/nightsheen" target="_blank" class="nav-social-link">
+                                <img src="./assets/images/sidebar/gitee.png" alt="gitee" width="20" height="20">
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://space.bilibili.com/3546697504393504" target="_blank" class="nav-social-link">
+                                <img src="./assets/images/sidebar/bilibili.png" alt="bilibili" width="20" height="20">
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.cnblogs.com/breezecn" target="_blank" class="nav-social-link">
+                                <img src="./assets/images/sidebar/cnblogs.png" alt="cnblogs" width="20" height="20">
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.xiaohongshu.com/" target="_blank" class="nav-social-link">
+                                <img alt="xiaohongshu" width="20" height="20" src="data:image/png;base64,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" />
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.goofish.com/" target="_blank" class="nav-social-link">
+                                <img alt="xianyu" width="20" height="20" src="./assets/images/sidebar/xianyu.png" />
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.taobao.com/" target="_blank" class="nav-social-link">
+                                <img alt="taobao" width="20" height="20" src="./assets/images/sidebar/taobao.png" />
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.zhihu.com/" target="_blank" class="nav-social-link">
+                                <img alt="zhihu" width="20" height="20" src="./assets/images/sidebar/zhihu.png" />
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.douyin.com/" target="_blank" class="nav-social-link">
+                                <img alt="douyin" width="20" height="20" src="./assets/images/sidebar/douyin.png" />
+                            </a>
+                        </li>
+                        <li class="nav-social-item mb-3">
+                            <a href="https://www.huzhan.com/" target="_blank" class="nav-social-link">
+                                <img alt="huzhan" width="20" height="20" src="./assets/images/sidebar/huzhan.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="muri-copyright w-100" id="muri_copyright">
+                    <div class="copyright-text text-gray">版权所有 &copy; 2026 breeze</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="muri-resp-header">
+        <div class="resposnive-navbar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 col-lg-4"><a class="navbar-brand resp-muri-logo" href="/"> <img
+                            src="./assets/images/sidebar/logo.png" alt="this is a logo of zjkal page"
+                            class="align-text-top"> </a></div>
+                    <div class="col-6 col-md-8 col-lg-8 icon-column position-relative">
+                        <div class="three col">
+                            <div class="hamburger" id="hamburger-6"><span class="line"></span> <span
+                                    class="line"></span> <span class="line"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="muri-content-wrap tab-content">
+        <div class="line-circle-shape"><img src="./assets/images/homeimage/line-circle.png" class="muri-line-circle"
+                                            alt="this is a line circle shape"></div>
+        <div class="dot-rectangle-one"><img src="./assets/images/homeimage/dot-rectangle.png"
+                                            class="muri-dot-rectangle-one" alt="this is a dot rectangle shape one">
+        </div>
+        <section class="muri-news-page min-vh-100 tabs_tab position-relative" id="muri_news_content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-12">
+                        <div class="muri-news-title position-relative"><h1 class="strock-heading news-back-title mb-0">
+                            Essay Diary</h1>
+                            <div class="muri-headi-text news-main-title w-text mb-0"> 随笔日记</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row muri-news-blog">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="news-blog-card position-relative news-blog-one static-img-blog">
+                            <div class="blog-news-img position-relative">
+                                <a href="./detail.html">
+                                    <img src="./assets/images/blog/banner.jpg" alt="📦占位符" class="news-image">
+                                </a>
+                            </div>
+                            <div class="news-deatils">
+                                <span class="news-date jost-400"><a href="/detail.html">2025-03-13 11:25:31</a></span>
+                                <div class="news-title">
+                                    <a href="./detail.html">📦开源米表程序</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="news-blog-card position-relative news-blog-one static-img-blog">
+                            <div class="blog-news-img position-relative">
+                                <a href="./detail.html">
+                                    <img src="./assets/images/blog/banner.jpg" alt="⏱️占位符" class="news-image">
+                                </a>
+                            </div>
+                            <div class="news-deatils">
+                                <span class="news-date jost-400"><a href="/detail.html">2025-03-13 16:10:56</a></span>
+                                <div class="news-title">
+                                    <a href="./detail.html">⏱️开源米表程序</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="news-blog-card position-relative news-blog-one static-img-blog">
+                            <div class="blog-news-img position-relative">
+                                <a href="./detail.html">
+                                    <img src="./assets/images/blog/banner.jpg" alt="⏱️占位符" class="news-image">
+                                </a>
+                            </div>
+                            <div class="news-deatils">
+                                <span class="news-date jost-400"><a href="/detail.html">2025-03-13 16:10:56</a></span>
+                                <div class="news-title">
+                                    <a href="./detail.html">⏱️开源米表程序</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="dot-rectangle-two"><img src="./assets/images/homeimage/dot-rectangle.png"
+                                            class="muri-dot-rectangle-two" alt="this is a dot rectangle shape two">
+        </div>
+        <div class="dline-half-circle"><img src="./assets/images/homeimage/half-circle.png" class="muri-half-circle"
+                                            alt="this is a double line half circle"></div>
+    </div>
+</div>
+<script src="./assets/js/jquery-4.0.0.min.js"></script>
+<script src="./assets/js/bootstrap-5.3.3.min.js"></script>
+<script src="./assets/js/preloader.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+<script src="./assets/js/gsap.min.js"></script>
+<script src="./assets/js/prism.js"></script>
+<script src="./assets/js/custom.js"></script>
+<script src="./assets/js/nocopy.js"></script>
+</body>
+</html>
